@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+	min-height: 100%;
+	background-color: #f0f4f8; /* soft gray-blue background */
+	overflow: hidden;
+}
+
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: #1e293b;              /* slate-800 text */
+	background-color: #e2e8f0;   /* slate-200 background */
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	font-weight: 500;
+	color: #2563eb; /* blue-600 */
+	text-decoration: inherit;
+}
+a:hover {
+	color: #1d4ed8; /* blue-700 */
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+	color: #0f172a; /* slate-900 */
+}
+
+#puneeth {
+	min-width: 100vw;
+}
+
+button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: #2563eb; /* blue-600 */
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.25s, border-color 0.25s;
+}
+button:hover {
+	background-color: #1d4ed8; /* blue-700 */
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto #93c5fd; /* light-blue-300 focus ring */
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #1f2937;             /* gray-800 text */
+		background-color: #f9fafb;  /* gray-50 background */
+	}
+	a:hover {
+		color: #3b82f6; /* blue-500 */
+	}
+	button {
+		background-color: #3b82f6; /* blue-500 */
+	}
+}
